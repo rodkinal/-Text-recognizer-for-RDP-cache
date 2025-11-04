@@ -240,10 +240,6 @@ En un procesamiento típico de 2,726 imágenes:
 - ✅ **VALIDADO**: Prueba exhaustiva con 2,726 imágenes
 - ✅ **ACTUALIZADO**: Documentación completa y ejemplos
 
-### Características eliminadas (simplificación)
-- ❌ `--input-dir` (usar `--input`)
-- ❌ `--source` (usar `--input`)
-
 ### Versión 1.x
 - Implementación inicial con EasyOCR
 - Soporte multiidioma básico
@@ -270,34 +266,3 @@ python text_detector.py --limit 50 --confidence 0.6
 # 3. Procesamiento completo
 python text_detector.py --confidence 0.6 --languages es
 ```
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor:
-
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
-## 🙏 Agradecimientos
-
-- [EasyOCR](https://github.com/JaidedAI/EasyOCR) por el excelente motor OCR
-- OpenCV por las herramientas de procesamiento de imágenes
-- La comunidad de Python por las librerías utilizadas
-
-## 📞 Soporte
-
-Para reportar bugs o solicitar features:
-- Crea un issue en el repositorio
-- Incluye información del sistema y logs de error
-- Proporciona ejemplos de imágenes problemáticas (si es posible)
-
----
-
-**Desarrollado con ❤️ para el Sistema de Reconstrucción de Tiles de Capturas de Pantalla de Windows**
