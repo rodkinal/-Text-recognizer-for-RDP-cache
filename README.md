@@ -178,29 +178,6 @@ El script incluye optimizaciones automáticas:
 - Conversión de color para mejor OCR
 - Filtrado de ruido en detecciones
 
-## 🐛 Solución de Problemas
-
-### Error: "No module named 'easyocr'"
-```bash
-pip install easyocr
-```
-
-### Error: "CUDA not available"
-EasyOCR funcionará en CPU automáticamente. Para usar GPU:
-```bash
-pip install torch torchvision
-```
-
-### Rendimiento lento
-- Reduce el número de idiomas: `--languages es`
-- Usa el parámetro `--limit` para pruebas
-- Considera usar GPU si está disponible
-
-### Memoria insuficiente
-- Procesa en lotes más pequeños usando `--limit`
-- Cierra otras aplicaciones que consuman memoria
-- Usa imágenes de menor resolución si es posible
-
 ## 📋 Casos de Uso
 
 ### 1. Clasificación de capturas de pantalla
@@ -222,23 +199,6 @@ python text_detector.py --input "scanned_docs" --output "text_docs" --confidence
 ```bash
 python text_detector.py --input "multilang_images" --output "detected_text" --languages es en fr de
 ```
-
-## 📊 Métricas de Rendimiento
-
-En un procesamiento típico de 2,726 imágenes:
-- **Tiempo total**: ~22 minutos
-- **Velocidad**: ~2 imágenes/segundo
-- **Tasa de detección**: 50.5%
-- **Precisión**: 100% (sin errores)
-
-## 🔄 Historial de Cambios
-
-### Versión 2.0 (Noviembre 2025)
-- ✅ **NUEVO**: Eliminación de parámetros duplicados (`--input-dir`, `--source`)
-- ✅ **MEJORADO**: Optimización del parámetro `--input` único
-- ✅ **MEJORADO**: Interface más limpia sin redundancias
-- ✅ **VALIDADO**: Prueba exhaustiva con 2,726 imágenes
-- ✅ **ACTUALIZADO**: Documentación completa y ejemplos
 
 ### Versión 1.x
 - Implementación inicial con EasyOCR
